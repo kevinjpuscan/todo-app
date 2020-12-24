@@ -3,6 +3,9 @@ import Wrapper from './Wrapper';
 
 import {connect} from 'react-redux';
 import * as taskTypes from '../store/types/taskTypes';
+import IdGenerator from '../services/IdGenerator';
+
+let idGenerador=new IdGenerator();
 
 function InputTask({handleAddTask}){
     let [inputName,setInputName]=useState('');
@@ -12,7 +15,7 @@ function InputTask({handleAddTask}){
     }
 
     function saveTask(){
-        let task={id:1,name:inputName,state:false}
+        let task={id:idGenerador.generate(),name:inputName,state:false}
         handleAddTask(task);
         setInputName('');
     }
