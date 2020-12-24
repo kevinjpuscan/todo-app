@@ -29,6 +29,10 @@ switch(action.type){
         })
         return {...state,tasks:newTasks};
     }
+    case types.REMOVE_COMPLETED_TASK:{
+        let newTasks=state.tasks.filter(task=>!task.status);
+        return {...state,tasks:newTasks};
+    }
     default:{
         return state;
     }
