@@ -1,0 +1,11 @@
+:root {
+  --header-height: 25rem;
+  --title-container-padding: 6rem 0 5rem 0;
+  --title-font-size: 3.5rem;
+}
+.wrapper {
+  padding: 0 30%;
+}
+.header {
+  background-image: var(--background-header-desktop);
+}
