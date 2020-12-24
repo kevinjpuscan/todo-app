@@ -15,9 +15,11 @@ function InputTask({handleAddTask}){
     }
 
     function saveTask(){
-        let task={id:idGenerador.generate(),name:inputName,state:false}
+      if(inputName!==""){
+        let task={id:idGenerador.generate(),name:inputName,status:false}
         handleAddTask(task);
         setInputName('');
+      }
     }
 
     const handleKeyDown = event => {

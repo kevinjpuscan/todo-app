@@ -2,11 +2,17 @@ import React from 'react';
 import {connect} from 'react-redux';
 import * as taskAction from '../store/types/taskTypes';
 
-function TaskActions({handleRemoveCompleted}){
+function TaskActions({handleRemoveCompleted,totalTaskVisible}){
     return(<div className="task-element">
-    <div id="option-five-items" className="task-detail pointer">5 Items</div>
+    <div id="option-five-items" className="task-detail pointer">{totalTaskVisible} Items</div>
     <div className="task-detail pointer" onClick={handleRemoveCompleted}>clear Completed</div>
   </div>)
+}
+
+const mapStateToProps=state=>{
+  return {
+    totalTaskVisible:state.taskReducer.totalTaskVisible
+  }
 }
 
 const mapDispatchToProps=(dispatch)=>{
@@ -15,4 +21,4 @@ const mapDispatchToProps=(dispatch)=>{
   }
 }
 
-export default connect(null,mapDispatchToProps)(TaskActions);
+export default connect(mapStateToProps,mapDispatchToProps)(TaskActions);

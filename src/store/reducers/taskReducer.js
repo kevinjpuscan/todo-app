@@ -1,15 +1,8 @@
-import IdGenerator from '../../services/IdGenerator';
 import * as types from '../types/taskTypes';
-let idGenerador=new IdGenerator();
 const initialState={
-    tasks:[
-        {id: idGenerador.generate(),name:"leer 1 hora",status:true},
-        {id: idGenerador.generate(),name:"leer 1 hora",status:false},
-        {id: idGenerador.generate(),name:"leer 1 hora",status:true},
-        {id: idGenerador.generate(),name:"leer 1 hora",status:false},
-        {id: idGenerador.generate(),name:"leer 1 hora",status:false},
-    ],
-    filter:undefined
+    tasks:[],
+    filter:undefined,
+    totalTaskVisible:0
 }
 
 export const taskReducer = (state=initialState,action)=>{
@@ -36,6 +29,9 @@ switch(action.type){
     }
     case types.CHANGE_FILTER:{
         return {...state,filter:action.payload}
+    }
+    case types.CHANGE_TASKS_VISIBLE:{
+        return {...state,totalTaskVisible:action.payload}
     }
     default:{
         return state;
