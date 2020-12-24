@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/todo-app/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/todo-app/static/js/main.1ce2f019.chunk.js",
+    "main.js.map": "/todo-app/static/js/main.1ce2f019.chunk.js.map",
+    "runtime-main.js": "/todo-app/static/js/runtime-main.826a8026.js",
+    "runtime-main.js.map": "/todo-app/static/js/runtime-main.826a8026.js.map",
+    "static/js/2.16916ff8.chunk.js": "/todo-app/static/js/2.16916ff8.chunk.js",
+    "static/js/2.16916ff8.chunk.js.map": "/todo-app/static/js/2.16916ff8.chunk.js.map",
+    "static/js/3.4a9f34d2.chunk.js": "/todo-app/static/js/3.4a9f34d2.chunk.js",
+    "static/js/3.4a9f34d2.chunk.js.map": "/todo-app/static/js/3.4a9f34d2.chunk.js.map",
+    "index.html": "/todo-app/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/todo-app/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.16916ff8.chunk.js.LICENSE.txt": "/todo-app/static/js/2.16916ff8.chunk.js.LICENSE.txt",
+    "static/media/icon-check.a8fb15d0.svg": "/todo-app/static/media/icon-check.a8fb15d0.svg",
+    "static/media/icon-cross.6ee81d30.svg": "/todo-app/static/media/icon-cross.6ee81d30.svg",
+    "static/media/icon-moon.6c03114b.svg": "/todo-app/static/media/icon-moon.6c03114b.svg",
+    "static/media/icon-sun.910b1f9a.svg": "/todo-app/static/media/icon-sun.910b1f9a.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.826a8026.js",
+    "static/js/2.16916ff8.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.1ce2f019.chunk.js"
+  ]
+}
