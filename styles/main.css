@@ -91,6 +91,19 @@
   background-color: transparent;
 }
 
+.tasks-empty {
+  margin-top: -2rem;
+  color: var(--task-name-check-color);
+  background-color: var(--container-background-color);
+  box-shadow: 0 0.5rem 2rem var(--shadow-color);
+  border-radius: 0.5rem;
+  padding: 4rem 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+}
+
 .main__list-task {
   background-color: var(--container-background-color);
   margin-top: -3rem;

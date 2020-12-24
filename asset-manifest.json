@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/todo-app/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/todo-app/static/js/main.3249578c.chunk.js",
-    "main.js.map": "/todo-app/static/js/main.3249578c.chunk.js.map",
-    "runtime-main.js": "/todo-app/static/js/runtime-main.080a54fa.js",
-    "runtime-main.js.map": "/todo-app/static/js/runtime-main.080a54fa.js.map",
-    "static/js/2.a758f53b.chunk.js": "/todo-app/static/js/2.a758f53b.chunk.js",
-    "static/js/2.a758f53b.chunk.js.map": "/todo-app/static/js/2.a758f53b.chunk.js.map",
-    "static/js/3.e8d1a990.chunk.js": "/todo-app/static/js/3.e8d1a990.chunk.js",
-    "static/js/3.e8d1a990.chunk.js.map": "/todo-app/static/js/3.e8d1a990.chunk.js.map",
+    "main.js": "/todo-app/static/js/main.c44e4000.chunk.js",
+    "main.js.map": "/todo-app/static/js/main.c44e4000.chunk.js.map",
+    "runtime-main.js": "/todo-app/static/js/runtime-main.b6e9d616.js",
+    "runtime-main.js.map": "/todo-app/static/js/runtime-main.b6e9d616.js.map",
+    "static/js/2.66fb16f1.chunk.js": "/todo-app/static/js/2.66fb16f1.chunk.js",
+    "static/js/2.66fb16f1.chunk.js.map": "/todo-app/static/js/2.66fb16f1.chunk.js.map",
+    "static/js/3.366e6c00.chunk.js": "/todo-app/static/js/3.366e6c00.chunk.js",
+    "static/js/3.366e6c00.chunk.js.map": "/todo-app/static/js/3.366e6c00.chunk.js.map",
     "index.html": "/todo-app/index.html",
     "static/css/main.6dea0f05.chunk.css.map": "/todo-app/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.a758f53b.chunk.js.LICENSE.txt": "/todo-app/static/js/2.a758f53b.chunk.js.LICENSE.txt",
+    "static/js/2.66fb16f1.chunk.js.LICENSE.txt": "/todo-app/static/js/2.66fb16f1.chunk.js.LICENSE.txt",
     "static/media/icon-check.a8fb15d0.svg": "/todo-app/static/media/icon-check.a8fb15d0.svg",
     "static/media/icon-cross.6ee81d30.svg": "/todo-app/static/media/icon-cross.6ee81d30.svg",
     "static/media/icon-moon.6c03114b.svg": "/todo-app/static/media/icon-moon.6c03114b.svg",
     "static/media/icon-sun.910b1f9a.svg": "/todo-app/static/media/icon-sun.910b1f9a.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.080a54fa.js",
-    "static/js/2.a758f53b.chunk.js",
+    "static/js/runtime-main.b6e9d616.js",
+    "static/js/2.66fb16f1.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.3249578c.chunk.js"
+    "static/js/main.c44e4000.chunk.js"
   ]
 }
