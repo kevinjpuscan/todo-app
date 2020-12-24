@@ -1,10 +1,7 @@
 /*colors*/
 :root {
   --right-blue: hsl(220, 98%, 61%);
-  --check-background: -moz-linear-gradient(
-    hsl(192, 100%, 67%),
-    hsl(280, 87%, 65%)
-  );
+  --check-background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
 
   /*Light Theme*/
   --very-light-gray: hsl(0, 0%, 98%);
