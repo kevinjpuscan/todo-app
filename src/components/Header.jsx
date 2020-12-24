@@ -3,6 +3,7 @@ import Wrapper from './Wrapper';
 
 import moon from "../images/icon-moon.svg";
 import sun from "../images/icon-sun.svg";
+import InputTask from './InputTask';
 
 
 
@@ -24,16 +25,7 @@ export default function Header({setDarkMode,darkMode}){
         </Wrapper>
         
     
-        <Wrapper>
-          <div className="form-container">
-            <div className="task-status">
-              <div className="task-uncheck" ></div>
-            </div>
-              <form>
-                <input type="text" id="task-input" placeholder="Create a new todo..."/>
-              </form>
-          </div>
-        </Wrapper>
+<InputTask />
       </header>
     )
 }

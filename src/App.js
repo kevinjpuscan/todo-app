@@ -3,6 +3,11 @@ import Header from './components/Header';
 import ListTask from './components/ListTask';
 import Filters from  './components/Filters';
 import Instruction from './components/Instruction';
+import { Provider } from "react-redux";
+import reducer from "./store/reducers";
+import { createStore } from "redux";
+
+const store = createStore(reducer);
 
 function App() {
   const [darkMode, setDarkMode] = useState(false)
@@ -23,12 +28,16 @@ function App() {
   }, [])
   
   return (
-    <main className={mainClass}>
-        <Header setDarkMode={setDarkMode} darkMode={darkMode}/>
-        <ListTask />
-        <Filters/>
-        <Instruction />
-      </main>
+    <div>
+      <Provider store={store}>
+        <main className={mainClass}>
+          <Header setDarkMode={setDarkMode} darkMode={darkMode}/>
+          <ListTask />
+          <Filters/>
+          <Instruction />
+        </main>
+      </Provider>
+    </div>
   );
 }
 

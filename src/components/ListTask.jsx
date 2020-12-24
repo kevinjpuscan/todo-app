@@ -2,15 +2,9 @@ import React from 'react';
 import TaskActions from './TaskActions';
 import TaskElement from './TaskElement';
 import Wrapeer from './Wrapper';
+import { connect } from "react-redux";
 
-function ListTask(){
-    let tasks=[
-      {name:"leer 1 hora",status:true},
-      {name:"leer 1 hora",status:false},
-      {name:"leer 1 hora",status:true},
-      {name:"leer 1 hora",status:false},
-      {name:"leer 1 hora",status:false},
-    ]
+function ListTask({tasks}){
 
     return(
         <Wrapeer>
@@ -27,4 +21,10 @@ function ListTask(){
     );
 }
 
-  export default ListTask;
+const mapStateToProps = state => {
+  return {
+    tasks: state.taskReducer.tasks
+  };
+};
+
+  export default connect(mapStateToProps)(ListTask);
