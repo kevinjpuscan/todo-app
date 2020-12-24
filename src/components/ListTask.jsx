@@ -3,14 +3,18 @@ import TaskActions from './TaskActions';
 import TaskElement from './TaskElement';
 import Wrapeer from './Wrapper';
 import { connect } from "react-redux";
+import FilterTasks from '../services/filterTasks';
 
-function ListTask({tasks}){
+let filterTask=new FilterTasks();
 
+function ListTask({tasks,filter}){
+
+   
     return(
         <Wrapeer>
             <div className="main__list-task">
             {
-                tasks.map((task,idx)=>(
+                filterTask.filter(tasks,filter).map((task,idx)=>(
                     <TaskElement key={idx} task={task}/>
                 ))
             }
@@ -23,7 +27,8 @@ function ListTask({tasks}){
 
 const mapStateToProps = state => {
   return {
-    tasks: state.taskReducer.tasks
+    tasks: state.taskReducer.tasks,
+    filter:state.taskReducer.filter
   };
 };
 

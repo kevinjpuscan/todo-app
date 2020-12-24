@@ -8,7 +8,8 @@ const initialState={
         {id: idGenerador.generate(),name:"leer 1 hora",status:true},
         {id: idGenerador.generate(),name:"leer 1 hora",status:false},
         {id: idGenerador.generate(),name:"leer 1 hora",status:false},
-    ]
+    ],
+    filter:undefined
 }
 
 export const taskReducer = (state=initialState,action)=>{
@@ -32,6 +33,9 @@ switch(action.type){
     case types.REMOVE_COMPLETED_TASK:{
         let newTasks=state.tasks.filter(task=>!task.status);
         return {...state,tasks:newTasks};
+    }
+    case types.CHANGE_FILTER:{
+        return {...state,filter:action.payload}
     }
     default:{
         return state;
