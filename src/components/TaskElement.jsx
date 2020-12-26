@@ -5,7 +5,7 @@ import {connect} from 'react-redux';
 import * as taskTypes from '../store/types/taskTypes';
 
 
-function TaskElement({task,handleRemoveTask,handleUpdateTask}){
+function TaskElement({task,handleRemoveTask,handleUpdateTask,handleReorderTasks}){
     let taskStatus=task.status?'check':'uncheck';
 
     function handleClickUpdate(){
@@ -16,8 +16,23 @@ function TaskElement({task,handleRemoveTask,handleUpdateTask}){
     function handleClickRemove(){
       handleRemoveTask(task.id);
     }
+
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+    
+    function drag(ev) {
+      ev.dataTransfer.setData("taskId", ev.target.id);
+    }
+    
+    function drop(ev) {
+      ev.preventDefault();
+      let idTaskOrigin=ev.dataTransfer.getData("taskId");
+      handleReorderTasks(idTaskOrigin,task.id);
+      
+    }
     return (
-        <div className={"task-element "+taskStatus} draggable="true">
+        <div id={task.id} className={"task-element "+taskStatus} draggable="true" onDragStart={drag} onDrop={drop} onDragOver={allowDrop}>
         <div className="task-status pointer" onClick={handleClickUpdate}>
           <div className="task-status__icon" >
             <img src={check} alt="icon check"/>
@@ -39,7 +54,9 @@ const mapDispatchToProps = dispatch => {
     handleRemoveTask: (id) =>
       dispatch({ type: taskTypes.REMOVE_TASK, payload: id }),
     handleUpdateTask: (task) =>
-      dispatch({ type: taskTypes.UPDATE_TASK, payload: task })
+      dispatch({ type: taskTypes.UPDATE_TASK, payload: task }),
+    handleReorderTasks:(idTaskOrigin,idTaskDestiny)=>
+      dispatch({type:taskTypes.REORDER_TASK,payload:{idTaskOrigin,idTaskDestiny}})
   };
 };
 
