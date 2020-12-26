@@ -9,3 +9,11 @@
 .header {
   background-image: var(--background-header-desktop);
 }
+
+.task-delete {
+  display: none;
+}
+
+.task-element:hover .task-delete {
+  display: flex;
+}

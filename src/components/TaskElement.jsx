@@ -38,7 +38,7 @@ function TaskElement({task,handleRemoveTask,handleUpdateTask,handleReorderTasks}
             <img src={check} alt="icon check"/>
              </div>
         </div>
-        <div className="task-main">
+        <div className="task-main pointer" onClick={handleClickUpdate}>
           <span className="task-name">{task.name}</span>
         </div>
         

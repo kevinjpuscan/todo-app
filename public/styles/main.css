@@ -85,10 +85,11 @@
   width: 100%;
   border: none;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.3rem;
   letter-spacing: 0.02rem;
   color: var(--input-color);
   background-color: transparent;
+  outline: none;
 }
 
 .tasks-empty {
@@ -135,8 +136,8 @@
   display: flex;
   align-items: center;
   width: 100%;
-  font-size: 1.1rem;
-  font-weight: 700;
+  font-size: 1.3rem;
+  font-weight: 600;
   letter-spacing: 0.02rem;
 }
 

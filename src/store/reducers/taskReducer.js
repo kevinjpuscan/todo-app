@@ -2,11 +2,12 @@ import IdGenerator from '../../services/IdGenerator';
 import * as types from '../types/taskTypes';
 let idGenerator=new IdGenerator();
 const initialState={
-    tasks:[{id:idGenerator.generate(),name:"Hola 1",status:false},
-        {id:idGenerator.generate(),name:"hola 2",status:true},
-        {id:idGenerator.generate(),name:"hola 3",status:false},
-        {id:idGenerator.generate(),name:"hola 4",status:true},
-        {id:idGenerator.generate(),name:"hola 5",status:false}],
+    tasks:[{id:idGenerator.generate(),name:"Complete online javascript course",status:true},
+        {id:idGenerator.generate(),name:"Jog around the park 3x",status:false},
+        {id:idGenerator.generate(),name:"10 minutes meditation",status:false},
+        {id:idGenerator.generate(),name:"Read for 1 hour",status:false},
+        {id:idGenerator.generate(),name:"Pick up groceries",status:false},
+        {id:idGenerator.generate(),name:"Complete Todo App on Frontend Mentor",status:false}],
     filter:undefined,
     totalTaskVisible:0
 }
